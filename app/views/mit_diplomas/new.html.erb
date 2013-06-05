@@ -1,0 +1,39 @@
+<% provide(:title, 'Diploma Request Form') %>
+<h1>MIT Diploma Request Form</h1>
+<p>
+</p>
+
+<div class="row">
+<div class="span6 offset3">
+
+  <%= form_for  @mit_diploma, :class => "form-inline", :action => "confirm" do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div>
+      <%= f.text_field :first_name, :class=> "input-medium", :placeholder=>"Name" %>
+
+      <%= f.text_field :father_name, :class=> "input-medium", :placeholder=>"Father's Name" %>
+
+      <%= f.text_field :grand_father_name, :class=> "input-medium", :placeholder=>"Grand Father's Name" %>
+    </div>
+    <div>
+      <%= f.text_field :shim, :class=> "input-medium", :placeholder=>"ሽም " %>
+      <%= f.text_field :shim_abo, :class=> "input-medium", :placeholder=>"ሽም  አቦ" %>
+      <%= f.text_field :shim_abo_hago, :class=> "input-medium", :placeholder=>"ሽም  አቦ ሓጎ "%>
+    </div>
+    <div>
+      <%= f.label :department, "Department" %>
+      <%= f.select :department,  ['ECE', 'CSE', 'EEE', 'IT'] %>
+
+      <%= f.label :year_of_graduation, "Year of Graduation" %>
+      <%= f.select :year_of_graduation, ['2007', '2008', '2009', '2010', '2011', '2012'] %>
+    </div>
+    <div>
+      <%= f.text_field :email, :class=> "input-big", :placeholder=>"Email" %>
+    </div>
+    <div>
+      <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+    </div>
+  <% end %>
+</div>
+</div>
+

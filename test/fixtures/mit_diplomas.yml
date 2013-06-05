@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_name: MyString
+  father_name: MyString
+  grand_father_name: MyString
+  shim: MyString
+  shim_abo: MyString
+  shim_abo_hago: MyString
+  department: MyString
+  year_of_graduation: MyString
+  email: MyString
+
+two:
+  first_name: MyString
+  father_name: MyString
+  grand_father_name: MyString
+  shim: MyString
+  shim_abo: MyString
+  shim_abo_hago: MyString
+  department: MyString
+  year_of_graduation: MyString
+  email: MyString
