@@ -4,8 +4,10 @@ ruby '2.0.0'
 gem 'rails', '4.0.0.rc1'
 gem 'therubyracer'
 gem 'bootstrap-sass', '2.3.0.1'
+gem 'libv8'
 group :development do
   gem 'pg', '0.15.1'
+  gem 'bootstrap-sass', '2.3.0.1'
 end
 
 gem 'sass-rails', '4.0.0.rc1'
@@ -21,5 +23,6 @@ end
 
 group :production do
   gem 'pg', '0.15.1'
+  gem 'bootstrap-sass', '2.3.0.1'
 end
 
